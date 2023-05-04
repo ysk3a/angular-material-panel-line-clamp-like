@@ -13,10 +13,15 @@
   mat-expansion-panel {
     width: 100%;
     // min-height: 48px; // same as default mat panel height collapsed
+    box-shadow: none;
+    transition: width 1s ease;
+
     &.clamp {
-      // width: 100%;
+      transition: width 1s ease;
+      width: 95%;
       position: absolute;
       z-index: 1;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
   }
 }

@@ -1,5 +1,8 @@
-<mat-accordion multi displayMode="flat" class="accord">
-  <span class="panel-wrapper" *ngFor="let item of items">
+<mat-accordion displayMode="flat" class="accord">
+  <span class="panel-wrapper" *ngFor="let item of items; let index = index;">
+    <!-- [style]="'width:'+ (100-(index * 5) + '%') "
+    [style]="'z-indez:'+ index + 1 + ';' "
+   -->
     <mat-expansion-panel (closed)="closed()" (afterCollapse)="afterCollapse(item)" (afterExpand)="afterExpand(item)" (opened)="opened(item)" [ngClass]="item.collapseFinished ? 'normal' : 'clamp'">
       <mat-expansion-panel-header>
         <mat-panel-title> This is the expansion title </mat-panel-title>
