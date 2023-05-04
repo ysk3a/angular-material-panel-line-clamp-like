@@ -1,0 +1,22 @@
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+.accord {
+  position: relative;
+  span.panel-wrapper {
+    min-height: 48px;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  mat-expansion-panel {
+    width: 100%;
+    // min-height: 48px; // same as default mat panel height collapsed
+    &.clamp {
+      // width: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}
